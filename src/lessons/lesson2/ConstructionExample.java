@@ -28,5 +28,42 @@ public class ConstructionExample
         }
         System.out.println("\n\n" +b);
 
+        ////////////////
+        int k=4;
+        String p;
+        switch(k)
+        {
+            case 1:
+                p = "Monday";
+                break;
+            case 2:
+                p = "Tuesday";
+                break;
+            case 3:
+                p = "Wednesday";
+                break;
+            case 4:
+                p = "Thursday";
+                break;
+            case 5:
+                p = "Friday";
+                break;
+            case 6:// Если закоменчено - то на 6 и 7 одинаковый вывод
+                //result = "Weekend";
+                //break;
+            case 7:
+                p = "Weekend";
+                break;
+            default:
+                p = "bad input";
+                break;
+        }
+
+        ////////////////////////////////
+
+
     }
+
 }
+
+
