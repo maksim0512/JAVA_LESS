@@ -2,49 +2,41 @@ package lessons.lesson6.abstractExample;
 
 import java.util.Objects;
 
-public abstract class Person implements Workable
-{
+public abstract class Person implements Workable {
 
   private String name;
   private int age;
 
-  public Person(String name, int age)
-  {
+  public Person(String name, int age) {
     this.name = name;
     this.age = age;
   }
 
   @Override
-  public void notDoWork()
-  {
+  public void notDoWork() {
     System.out.println("not");
   }
 
   //  public abstract void doWork();
 
-  public int growOld()
-  {
+  public int growOld() {
     return ++age;
   }
 
-  public String getName()
-  {
+  public String getName() {
     return name;
   }
 
-  public void setName(String name)
-  {
+  public void setName(String name) {
     this.name = name;
   }
 
-  public int getAge()
-  {
+  public int getAge() {
     return age;
   }
 
   @Override
-  public String toString()
-  {
+  public String toString() {
     return "Person{" +
         "name='" + name + '\'' +
         ", age=" + age +
@@ -52,8 +44,7 @@ public abstract class Person implements Workable
   }
 
   @Override
-  public boolean equals(Object o)
-  {
+  public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     Person person = (Person) o;
@@ -62,8 +53,7 @@ public abstract class Person implements Workable
   }
 
   @Override
-  public int hashCode()
-  {
+  public int hashCode() {
     return Objects.hash(name, age);
   }
 }

@@ -1,36 +1,30 @@
 package lessons.lesson6.abstractExample;
 
-public class Manager extends Person
-{
+public class Manager extends Person {
 
   private int phoneNumber;
 
-  public Manager(String name, int age, int phoneNumber)
-  {
+  public Manager(String name, int age, int phoneNumber) {
     super(name, age);
 
     this.phoneNumber = phoneNumber;
   }
 
   @Override
-  public void doWork()
-  {
+  public void doWork() {
     System.out.println(getName() + " is working not so hard.");
   }
 
-  public int getPhoneNumber()
-  {
+  public int getPhoneNumber() {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(int phoneNumber)
-  {
+  public void setPhoneNumber(int phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
   @Override
-  public String toString()
-  {
+  public String toString() {
     return "Manager{" + super.toString() +
         ", phoneNumber=" + phoneNumber +
         '}';

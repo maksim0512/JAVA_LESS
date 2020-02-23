@@ -20,8 +20,7 @@ public interface Workable {
     return "q";
   }
 
-  private void privateMethod()
-  {
+  private void privateMethod() {
     System.out.println("private");
   }
 }
