@@ -28,7 +28,7 @@ public class ReadArithmetic
                 line = bufferedReader.readLine().replaceAll(" ", "");//удаляем пробелы из строки
 
                 //Не знаю как выполнить арифметическую операцию над числами в принятой строке
-
+                //System.out.println(line);
                 //System.out.println("Total sum: " + total + " r.");
 
             }
