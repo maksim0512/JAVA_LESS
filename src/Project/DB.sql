@@ -19,7 +19,8 @@ name varchar(50));
 insert into customers values 
 (null, "Vasiliy"),
 (null, "Elena"),
-(null, "Boris");
+(null, "Boris"),
+(null, "Slava");
 
 
 create table basket(
@@ -31,6 +32,9 @@ insert into basket values
 (1, 1),
 (1, 3),
 (2, 2),
-(2, 4);
+(2, 4),
+(4, 2),
+(4, 4),
+(4, 5);
 
 
